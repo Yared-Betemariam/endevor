@@ -15,9 +15,10 @@ const Header = () => {
           Endevor
         </Link>
         {isLoggedIn ? (
-          <>
+          <div className="flex gap-6 items-center">
+            <Link to="my-posts">My Posts</Link>
             <SignOutButton />
-          </>
+          </div>
         ) : (
           <Link
             to="/sign-in"

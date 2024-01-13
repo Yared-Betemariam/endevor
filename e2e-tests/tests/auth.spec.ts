@@ -16,8 +16,8 @@ test("should sign in succesfully", async ({ page }) => {
 
   await page.getByRole("button", { name: "Login" }).click();
 
-  await expect(page.getByRole("button", { name: "Sign Out" })).toBeVisible();
   await expect(page.getByText("Sign in Success!")).toBeVisible();
+  await expect(page.getByRole("button", { name: "Sign Out" })).toBeVisible();
 });
 
 test("should allow user to register", async ({ page }) => {
