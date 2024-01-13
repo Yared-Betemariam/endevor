@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import { useAppContext } from "./contexts/AppContext";
 import AddPost from "./pages/AddPost";
+import React from "react";
 
 const App = () => {
   const { isLoggedIn } = useAppContext();
