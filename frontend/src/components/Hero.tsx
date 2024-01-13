@@ -1,4 +1,3 @@
-import React from "react";
 const Hero = () => {
   return (
     <div className="bg-gray-900 ph-4">

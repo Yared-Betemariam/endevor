@@ -1,4 +1,3 @@
-import React from "react";
 import { useFormContext } from "react-hook-form";
 import { postTypes } from "../../config/post-types-config";
 import { PostFormType } from "./ManagePostForm";
