@@ -39,3 +39,10 @@ test("should save post successufully", async ({ page }) => {
 
   await expect(page.getByText("Post Saved")).toBeVisible();
 });
+
+test("should view posts", async ({ page }) => {
+  await page.goto(`${UI_URL}posts`);
+
+  await expect(page.getByText("Testman")).toBeVisible();
+  await expect(page.getByText("This is a test")).toBeVisible();
+});

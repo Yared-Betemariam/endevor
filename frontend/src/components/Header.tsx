@@ -16,7 +16,7 @@ const Header = () => {
         </Link>
         {isLoggedIn ? (
           <div className="flex gap-6 items-center">
-            <Link to="my-posts">My Posts</Link>
+            <Link to="posts">My Posts</Link>
             <SignOutButton />
           </div>
         ) : (

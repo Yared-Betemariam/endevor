@@ -51,4 +51,14 @@ router.post(
   }
 );
 
+router.get("/", verifyToken, async (req: Request, res: Response) => {
+  try {
+    const posts = await Post.find({ userId: req.userId });
+    res.status(200).json(posts);
+  } catch (error) {
+    //as
+    res.status(500).json({ message: "Someting went wrong" });
+  }
+});
+
 export default router;
